@@ -1,7 +1,7 @@
-### Adopt-a-Bug assignment
-=========================================
+=========================================================
 Program.cs
-```
+=================
+
 using System;
 using Week2InClassPractice___Kibi_Leung;
 
@@ -28,4 +28,124 @@ internal class Program
     }
 }
 
-```
+=========================================================
+Insect.cs
+=================
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Week2InClassPractice___Kibi_Leung
+{
+    internal class Insect
+    {
+        // Attributes
+
+        // Private Field [-_species: Moth]
+        private string _species = "Moth";
+
+        // public property
+        public string Species
+        {
+            //Reading functionality
+            get
+            {
+                return _species;
+            }
+
+            // Define the write functionality
+            set
+            {
+                // Basic validation to ensure no one tries to set an empty value else set it to Moth
+                _species = !string.IsNullOrEmpty(value) ? value : "Moth";
+            }
+
+        }
+
+        // Auto-Implemented Public property with Read-Only Access
+        public string Color { get; private set; }
+
+        // Constructor
+        public Insect()
+        {
+            //TODO: Initialize or take input to instantiate
+        }
+
+        // Methods [+Interact(player: player): string] I can type void until I want to return a specific action
+        public string Interact(Player player)
+        {
+            string message = "buzz buzz";
+
+            //TODO: Create an interpolated string to customize the message
+            return message;
+        }
+
+    }
+}
+
+=========================================================
+Player.cs
+=================
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Week2InClassPractice___Kibi_Leung
+{
+    internal class Player
+    {
+        // Attributes
+
+        //public field
+        public string PlayerName;
+
+        //private field
+        private int _age;
+
+        //public string array (basically a list)
+        public Insect[] Inventory = new Insect[4];
+
+        //Constructor (always public & always has the same name as the class)
+
+        public Player()
+        {
+            PlayerName = "Player One";
+        }
+
+        //Overloaded Constructor
+
+        public Player(int NewAge)
+        {
+            _age = NewAge;
+        }
+
+        public Player(string newName)
+        {
+            PlayerName = newName;
+        }
+
+        //Methods
+        public int GetPlayerAge()
+        {
+            return _age;
+        }
+
+        //Tightly couple the Insect class to the Console platform
+        public void AdoptBugConsole(Insect insect)
+        {
+            //string Concatenation
+            Console.WriteLine(this.PlayerTime + " has adopted a " + insect.Species + "!");
+        }
+
+        public string AdoptBug(Insect insect)
+        {
+            //string Interpolation
+            return $"{this.PlayerName} has adopted a 
+        }
+    }
