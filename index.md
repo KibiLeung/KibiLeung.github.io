@@ -15,4 +15,6 @@ A screenshot of the first scene of my adventure game. This project demonstrates 
 
 ### Adopt-A-Bug
 
+![Adopt-a-Bug](https://github.com/KibiLeung/KibiLeung.github.io/blob/main/Adopt-A-Bug)
+
 An application allowing players to choose and adopt a bug.
