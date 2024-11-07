@@ -24,6 +24,6 @@ An application allowing players to choose and adopt a bug.
 
 ### Dice Game
 
-![Dice Game]()
+![Dice Game](https://github.com/KibiLeung/KibiLeung.github.io/blob/main/Dice%20Game)
 
 An application that lets players roll a dice.
