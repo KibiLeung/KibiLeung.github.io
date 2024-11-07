@@ -1,0 +1,31 @@
+### Adopt-a-Bug assignment
+=========================================
+Program.cs
+```
+using System;
+using Week2InClassPractice___Kibi_Leung;
+
+namespace AdoptABugPractice;
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        //Instantiation Objects
+        Player MyPlayer = new Player();
+        Console.WriteLine("Player Name: " + MyPlayer.PlayerName);
+        Console.ReadKey(true);
+
+        Insect MyInsect = new Insect();
+        MyInsect.Species = "Moth";
+
+        //Instantiate an insect with an object intializer to set the species
+        Insect MyOtherInsect = new Insect(){Species = "Grasshopper"};
+
+        Console.WriteLine($"Player Age: {MyPlayer.GetPlayerAge()}");
+
+        Console.Write("Set your age: ");
+
+    }
+}
+
+```
