@@ -7,6 +7,6 @@
 =========================================================================================
 
 ### Adventure Game
-![A screenshot of the first scene of the adventure game.](https://github.com/KibiLeung/KibiLeung.github.io/blob/main/Screenshot%202024-11-06%20215456.png)
+(https://github.com/KibiLeung/KibiLeung.github.io/blob/main/Screenshot%202024-11-06%20215456.png)
 ==========================================
-A text adventure game containing various 
+A screenshot of the first scene of my adventure game. This project demonstrates the use of C# wide-range principles.
