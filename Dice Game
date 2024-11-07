@@ -1,1 +1,14 @@
 
+
+namespace Dice_Game_Assignment___Kibi_Leung
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            DiceGame myGame = new DiceGame();
+            myGame.Start();
+        }
+    }
+}
+
