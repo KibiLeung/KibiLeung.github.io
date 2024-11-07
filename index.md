@@ -1,6 +1,7 @@
 # Kibi's Programming Portfolio
 
-> Please note: Unfinished portfolio, still in progress
+> [!NOTE]
+> Unfinished portfolio, still in progress
 
 =========================================================================================
 ### Welcome!
